@@ -46,7 +46,6 @@ const addText = e => {
 //function to find which text to delete:
 const findeText = e => {
   textToDel = e.target.textContent;
-  console.log(textToDel);
 };
 
 //sorting by name function:
@@ -89,9 +88,16 @@ const deleteText = () => {
   showOutput(textArr);
 };
 
+const showXml = () => {
+  console.log(refs.outputList.innerHTML);
+  const xmlText = refs.outputList.innerHTML.replaceAll('li', 'element');
+  refs.outputList.textContent = `<list> ${xmlText} </list>`;
+};
+
 //adding eventListeners to buttons:
 refs.add.addEventListener('click', addText);
 refs.outputList.addEventListener('click', findeText);
 refs.sortName.addEventListener('click', sortByName);
 refs.sortValue.addEventListener('click', sortByValue);
 refs.delete.addEventListener('click', deleteText);
+refs.xml.addEventListener('click', showXml);

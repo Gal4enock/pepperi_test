@@ -5,6 +5,9 @@
 .manageSection {
   width: 300px;
   margin: 0 auto;
+  padding: 25px;
+  background-image: url('./images/bcg.jpg');
+  background-size: cover;
 }
 
 .inputBlock {
@@ -22,6 +25,8 @@
   display: block;
   width: 187px;
   height: 25px;
+  background-color: transparent;
+  font-weight: 700;
 }
 
 .userOutput {
@@ -29,6 +34,11 @@
   width: 187px;
   height: 156px;
   border: 1px solid black;
+  font-weight: 700;
+}
+
+.labelText {
+  font-weight: 700;
 }
 
 .list {
@@ -63,6 +73,22 @@
 
   .userOutput {
     width: 250px;
+  }
+  .controlButton {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .manageSection {
+    width: 700px;
+  }
+  .userInput {
+    width: 350px;
+  }
+
+  .userOutput {
+    width: 350px;
   }
   .controlButton {
     width: 150px;
