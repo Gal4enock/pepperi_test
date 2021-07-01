@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+.manageSection {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.inputBlock {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.outputBlock {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userInput {
+  display: block;
+  width: 187px;
+  height: 25px;
+}
+
+.userOutput {
+  display: block;
+  width: 187px;
+  height: 156px;
+  border: 1px solid black;
+}
+
+.list {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.controlButton {
+  display: block;
+  width: 100px;
+  height: 25px;
+  margin-top: 18px;
+  border-radius: 5px;
+}
+
+.addBtn {
+  background-color: lightgreen;
+}
+
+.deleteBtn {
+  background-color: lightsalmon;
+}
+/*sizes for laptop */
+
+@media (min-width: 720px) {
+  .manageSection {
+    width: 500px;
+  }
+  .userInput {
+    width: 250px;
+  }
+
+  .userOutput {
+    width: 250px;
+  }
+  .controlButton {
+    width: 150px;
+  }
+}

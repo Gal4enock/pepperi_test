@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="manageSection">
+      <h1>Test</h1>
+
+      <div class="inputBlock">
+        <label for="">
+          Name/Value Pair
+          <input class="userInput" type="text" placeholder="name=value" />
+        </label>
+
+        <button class="controlButton addBtn">Add</button>
+      </div>
+
+      <div class="outputBlock">
+        <label for="">
+          Name/Value Pair List
+          <div class="userOutput">
+            <ul class="list"></ul>
+          </div>
+        </label>
+        <div>
+          <button class="controlButton sortNameBtn">Sort by name</button>
+          <button class="controlButton sortValueBtn">Sort by value</button>
+          <button class="controlButton deleteBtn">Delete</button>
+          <button class="controlButton xmlBtn">Show XML</button>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
